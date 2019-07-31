@@ -3,7 +3,7 @@
   v2.0 | 20110126
   License: none (public domain)
 */
-@background-color: green;
+@background-color: maroon;
 @color: black;
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -61,14 +61,36 @@ body {
 };
 .container header {
     width: 100%;
-.container nav {
+    color: @color;
+
+nav {
         width: 100%;
         display: flex;
-        justify-content: space-between; 
+        justify-content: space-evenly; 
+        margin-left: 30px;
+        color: @color;
+        font-size: 1.3rem;
+       
     }
-.container header nav a {
-        background-color: @background-color;
-        font-size: 1.5rem;
+    a {
+        color: @color;
         text-decoration: none;
     }
+  
 }
+.about {
+    
+img {
+     width: 20%;
+     display: flex;
+    margin: 10px 0px 0px 20px;
+    }
+.about-me h1 {
+    display: flex;
+    font-size: 2.2rem;
+    position: absolute;
+    left: 350px;
+    bottom: 450px;
+}
+}
+
