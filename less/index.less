@@ -3,7 +3,7 @@
   v2.0 | 20110126
   License: none (public domain)
 */
-@background-color: maroon;
+@background-color: lightseagreen;
 @color: black;
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -111,40 +111,64 @@ img {
     bottom: 575px;
 }
 }
-@media(max-width: 500) {
-    /* go through and fix this
-    .about {
-    border: 1px dashed white;
-    background: goldenrod;
-    
-img {
-     width: 20%;
-     display: flex;
-    margin: 10px 0px 20px 20px;
+.lilabout {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20%;
+    width: 50%;
+    border: 1.5px solid orange;
+    margin-top: 20px;
+
+.lilaboutme h2 {
+        font-size: 1.7rem;
     }
-.about-me h1 {
+}
+
+.experiences {
     display: flex;
-    font-size: 2.8rem;
-    position: absolute;
-    left: 350px;
-    bottom: 650px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 30%;
+    .skills{
+        border: 1px solid black;
+        width: 400px;
+        height: 160px;
+        background: cyan;
+    }
+    .skills h2 {
+        font-size: 1.7rem;
+        padding: 1.8%;
+
+    }
+    .jobs {
+        background:cyan;
+        border: 1px solid black;
+        width: 400px;
+        height: 160px;
+        padding: 0px;
+        margin-left: 10px;
+        margin-top: 90px;
+        position: absolute;
+        right: 200px;
+        bottom: 142px;
+    
+    }
+    .jobs h3 {
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
 }
-.about-me h2 {
-    display: flex;
-    font-size: 2rem;
-    position: absolute;
-    left: 350px;
-    bottom: 615px;
-    margin-left: 16rem;
+.contact {
+    display:flex;
+    flex-direction: column;
+    border-top: 1px solid yellow;
 }
-.about-me p {
-    display: flex;
-    font-size: 1rem;
-    position: absolute;
-    left: 350px;
-    margin-left: 22rem;
-    bottom: 575px;
-}
-}
-}
-*/
+    .contact h6 {
+        font-size: 1.2rem;
+        text-decoration: underline;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
