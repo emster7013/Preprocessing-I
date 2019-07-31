@@ -171,9 +171,9 @@ body {
 }
 .about .about-me h2 {
   display: flex;
-  font-size: 2rem;
+  font-size: 1.3rem;
   position: absolute;
-  left: 350px;
+  left: 120px;
   bottom: 615px;
   margin-left: 16rem;
 }
@@ -181,7 +181,7 @@ body {
   display: flex;
   font-size: 1rem;
   position: absolute;
-  left: 350px;
+  left: 20px;
   margin-left: 22rem;
   bottom: 575px;
 }
@@ -225,7 +225,7 @@ body {
   margin-top: 90px;
   position: absolute;
   right: 200px;
-  bottom: 142px;
+  bottom: 102px;
 }
 .experiences .jobs h3 {
   font-size: 1.4rem;
@@ -241,4 +241,22 @@ body {
   text-decoration: underline;
   margin-bottom: 15px;
   margin-top: 10px;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 60%;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  .about .about-me {
+    width: 100%;
+  }
+  .about .about-me h1 {
+    display: flex;
+    font-size: 2.2rem;
+  }
+  .about-me h2 {
+    position: absolute;
+    width: 20%;
+  }
 }
