@@ -1,6 +1,6 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
 */
 html,
 body,
@@ -133,5 +133,20 @@ table {
 html,
 body {
   height: 100%;
-  background-color: red;
+}
+body {
+  background-color: green;
+}
+.container header {
+  width: 100%;
+}
+.container header .container nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container header .container header nav a {
+  background-color: green;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
